@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Durabem | Feito para durar</title>
+<meta name="description" content="Durabem: mais de 3 mil itens para construção, ferragens, elétrica, ferramentas e linha química — espuma expansiva, PU40, silicones, adesivos e Spray Premium.">
+<meta name="theme-color" content="#DA291C">
+<link rel="icon" href="assets/logo/durabem-simbolo.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/roboto-condensed-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a href="#topo" class="marca">
+      <img src="assets/logo/durabem-logo.svg" alt="Durabem">
+      <span>Feito para durar</span>
+    </a>
+    <div class="topo__dir">
+      <div class="topo__util">
+        <form class="busca" id="busca" role="search">
+          <input id="busca-termo" type="search" placeholder="Pesquisar" aria-label="Pesquisar produtos">
+          <button type="submit">BUSCAR</button>
+        </form>
+        <a href="#contato" class="restrita"><img src="assets/logo/durabem-simbolo.svg" alt="">ÁREA RESTRITA</a>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#literatura">Literatura técnica</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="aviso">
+  <p><strong>Seu estoque sempre cheio com a Durabem</strong> - Não perca vendas por falta de produto. Receba seus pedidos em tempo recorde. <a href="#contato">Garanta seu estoque</a></p>
+</div>
+
+<main id="topo">
+  <section class="carrossel-wrap" aria-label="Destaques Durabem">
+    <div class="carrossel" id="carrossel">
+      <div class="carrossel__dots" id="carrossel-dots"></div>
+      <button type="button" class="carrossel__seta carrossel__seta--ant" id="carrossel-ant" aria-label="Anterior">‹</button>
+      <button type="button" class="carrossel__seta carrossel__seta--prox" id="carrossel-prox" aria-label="Próximo">›</button>
+    </div>
+  </section>
+
+  <section id="destaques" class="destaques">
+    <div class="wrap">
+      <article class="destaque">
+        <div class="destaque__foto"><img src="assets/destaques/bomba.jpg" alt="Bomba d'água periférica Durabem à beira da piscina" style="object-position:68% 50%" loading="lazy"></div>
+        <div class="destaque__corpo">
+          <h3>O calor chegou de tudo! Sua piscina está pronta para o mergulho?</h3>
+          <p>Não deixe a temperatura subir sem ter onde se refrescar. Para garantir água limpa, cristalina e em movimento o verão inteiro, você precisa de um equipamento que aguente o ritmo.</p>
+          <p>Conte com a potência das Bombas d'água Durabem. Instale agora e garanta a diversão da família sem dores de cabeça.</p>
+        </div>
+      </article>
+      <article class="destaque">
+        <div class="destaque__foto"><img src="assets/destaques/loja.jpg" alt="Corredor de loja de material de construção" loading="lazy"></div>
+        <div class="destaque__corpo">
+          <h3>Fortaleça seu Comércio com a Linha Completa Durabem</h3>
+          <p>Na Durabem, entendemos que o sucesso do seu comércio de material de construção depende de produtos que combinam giro rápido e satisfação do cliente. Por isso, desenvolvemos uma ampla linha de itens projetados para o máximo desempenho em obras de todos os portes.</p>
+        </div>
+      </article>
+      <article class="destaque">
+        <div class="destaque__foto" data-sem-foto="Foto: brocas Durabem"></div>
+        <div class="destaque__corpo">
+          <h3>Otimize o desempenho de suas ferramentas com as brocas Durabem</h3>
+          <p>Não deixe sua obra parar por falta de acessórios de qualidade. As Brocas Durabem são fabricadas com materiais de alta resistência, garantindo que você tenha em mãos um produto que suporta altas temperaturas e o impacto constante do dia a dia profissional.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="wrap">
+      <div class="produtos__topo">
+        <div class="titulo-secao titulo-secao--grande">
+          <img src="assets/logo/durabem-simbolo.svg" alt="">
+          <div>
+            <h2>Linha química Durabem</h2>
+            <span>Adesivos, lubrificantes, tintas e impermeabilizantes</span>
+          </div>
+        </div>
+        <a href="#catalogo" class="link-seta">VER CATÁLOGO COMPLETO →</a>
+      </div>
+      <div class="grade-produtos" id="grade-produtos"></div>
+      <p class="busca-vazia" id="busca-vazia" hidden>Nenhum produto encontrado na linha química. Consulte o <a href="#catalogo">catálogo completo</a> ou <a href="#contato">fale com a gente</a>.</p>
+    </div>
+  </section>
+
+  <section id="spray" class="spray">
+    <div class="wrap">
+      <div class="spray__texto">
+        <div>
+          <span class="kicker">TINTA SPRAY</span>
+          <h2>Spray Premium Durabem</h2>
+        </div>
+        <p>Excelente acabamento, maior durabilidade e secagem rápida. Lata de 350 ml / 250 g nas versões Uso Geral e Metálico.</p>
+        <div class="abas" id="abas-spray" role="tablist" aria-label="Linhas de spray"></div>
+        <div class="cores" id="cores-spray"></div>
+        <span class="nota">Amostras aproximadas. Confira a cor na tampa da lata.</span>
+      </div>
+      <div class="spray__lata">
+        <div class="spray__palco"><img id="spray-img" src="assets/produtos/spray-amarelo.png" alt="Spray Durabem"></div>
+        <div class="spray__rodape">
+          <strong id="spray-titulo"></strong>
+          <a href="#literatura" id="spray-fispq" class="btn">FISPQ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <div class="catalogo__foto" data-sem-foto="Foto: caixa de ferramentas vermelha e furadeira"></div>
+    <div class="catalogo__fade"></div>
+    <div class="wrap">
+      <h2>CATÁLOGO 2026</h2>
+      <span>ACESSE OS CATÁLOGOS DURABEM</span>
+      <div class="catalogo__btns">
+        <a href="assets/catalogo/catalogo-durabem-2026.pdf" target="_blank" rel="noopener" class="btn btn--lg">Baixar catálogo</a>
+        <a href="#contato" class="btn btn--lg">Falar com vendedor</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="wrap">
+      <span class="news__titulo">Receba novidades e promoções!</span>
+      <span class="news__ok" id="news-ok" hidden>Cadastro feito. Você vai receber as próximas novidades no seu e-mail.</span>
+      <form id="news-form">
+        <input placeholder="Seu nome" aria-label="Seu nome" required>
+        <input placeholder="Seu e-mail" aria-label="Seu e-mail" type="email" required>
+        <button type="submit">Eu quero!</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="wrap">
+      <div class="tiles" id="tiles"></div>
+      <div class="categorias">
+        <span>NOSSOS PRODUTOS · MAIS DE 3 MIL ITENS</span>
+        <div id="categorias"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="literatura" class="literatura">
+    <div class="wrap">
+      <div class="titulo-secao">
+        <img src="assets/logo/durabem-simbolo.svg" alt="">
+        <div>
+          <h2>Literatura técnica</h2>
+          <span>Documentos para download</span>
+        </div>
+      </div>
+      <div class="docs">
+        <a href="#produtos" class="doc"><strong>FISPQ</strong><span>Ficha de Informações de Segurança de Produtos Químicos.</span></a>
+        <a href="#contato" class="doc"><strong>Certificado de Aprovação (CA)</strong><span>Linha de EPI e segurança.</span></a>
+        <a href="#contato" class="doc"><strong>Manuais</strong><span>Bombas, iluminação e ferramentas.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="wrap">
+      <div class="titulo-secao">
+        <img src="assets/logo/durabem-simbolo.svg" alt="">
+        <div>
+          <h2>Blog oficial Durabem</h2>
+          <span>Fique por dentro das novidades e dicas!</span>
+        </div>
+      </div>
+      <div class="posts" id="posts"></div>
+    </div>
+  </section>
+</main>
+
+<div class="cookies" id="cookies" hidden>
+  <div class="wrap">
+    <span>A Durabem utiliza cookies para melhorar a sua experiência e os nossos serviços online. Se você continuar navegando, consideraremos seu uso aceitável. Mais informações na Política de Privacidade.</span>
+    <button type="button" class="btn" id="cookies-ok">CONCORDAR E FECHAR</button>
+  </div>
+</div>
+
+<footer id="contato" class="rodape">
+  <div class="rodape__fade">
+    <div class="wrap rodape__grade">
+      <div class="rodape__marca">
+        <img src="assets/logo/durabem-logo.svg" alt="Durabem">
+        <span class="rodape__slogan">Feito para durar</span>
+      </div>
+      <nav>
+        <span class="rodape__titulo">HOME</span>
+        <a href="#">Centros de Distribuição</a>
+        <a href="#produtos">Linha de Produtos</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Qualidade</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <nav>
+        <span class="rodape__titulo">PRODUTOS</span>
+        <a href="#produtos">Adesivos e Produtos Químicos</a>
+        <a href="#sobre">Abrasivos, Ferragens e Solda</a>
+        <a href="#sobre">EPIs</a>
+        <a href="#sobre">Material Elétrico e Iluminação</a>
+        <a href="#sobre">Ferramentas de Corte</a>
+        <a href="#sobre">Ferramentas Manuais</a>
+      </nav>
+      <nav>
+        <span class="rodape__titulo">LITERATURA TÉCNICA</span>
+        <a href="#literatura">FISPQ</a>
+        <a href="#literatura">Certificado de Aprovação (CA)</a>
+        <a href="#literatura">Manuais</a>
+      </nav>
+      <div class="rodape__g8">
+        <span class="rodape__titulo">UMA MARCA</span>
+        <strong>G8</strong>
+        <span>Relações Construtivas no Varejo</span>
+        <div class="redes">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap copyright">COPYRIGHT © DURABEM 2026. TODOS OS DIREITOS RESERVADOS</div>
+  </div>
+</footer>
+
+<script src="js/dados.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
